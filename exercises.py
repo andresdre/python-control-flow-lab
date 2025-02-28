@@ -231,4 +231,55 @@
 # determine_season()
 
 
+# Exercise 6: Number Guessing Game
+#
+# Write a Python function named `guess_number` that allows a user to guess a predetermined number within a range.
+#
+# Requirements:
+# - Set a fixed number as the target for guessing (e.g., 42).
+# - Prompt the user to guess a number within a range (e.g., 1 to 100).
+# - Allow the user to guess up to five times.
+# - After each guess, use conditional statements with AND, OR, and NOT to give the user hints like:
+#   - "Guess is too low" or "Guess is too high."
+#   - "Last chance!" when they are on their fifth guess.
+# - Print "Congratulations, you guessed correctly!" if they guess the number.
+# - Print "Sorry, you failed to guess the number in five attempts." if they do not succeed.
+#
+# Hints:
+# - Use a for loop with a range to limit guesses to five.
+# - Use logical AND, OR, and NOT to check conditions and provide appropriate feedback.
+
+
+# def guess_number():
+#     # Your control flow logic goes here
+#     import random
+
+#     secret_number = random.randint(1, 100)
+#     attempts = 5
+
+#     print("Guess the number between 1 and 100. You have 5 attempts!")
+
+#     for attempt in range(1, attempts + 1):
+#         try:
+#             guess = int(input(f"Attempt {attempt}/{attempts}: Enter your guess: "))
+#             if guess < 1 or guess > 100:
+#                 print("Please enter a number between 1 and 100.")
+#                 continue
+
+#             if guess == secret_number:
+#                 print(f"🎉 Congratulations! You guessed the correct number {secret_number} in {attempt} attempts!")
+#                 return
+#             elif guess < secret_number:
+#                 print("Too low! Try a higher number.")
+#             else:
+#                 print("Too high! Try a lower number.")
+
+#         except ValueError:
+#             print("Invalid input! Please enter a valid number.")
+
+#     print(f"😢 Sorry, you're out of attempts! The correct number was {secret_number}.")
+
+# # Call the function
+# guess_number()
+
 
